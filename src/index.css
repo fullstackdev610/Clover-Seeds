@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Azonix;
+  src: url("../src/static/fonts/Azonix.otf") format("opentype");
+}
+a {
+  text-decoration: none;
+}
+.maven {
+  font-family: "Maven Pro", sans-serif;
+}
+.azonix {
+  font-family: Azonix;
+}
+
+body {
+  font-family: "Maven Pro", sans-serif;
+  background-color: #0d1f19;
+}
+
+.wrapper {
+  background-image: url("../src/static/images/BACKGROUND\ DAPP\ CS\ 2022.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.tab-buttons {
+  margin-bottom: 50px;
+}
+
+button {
+  margin-right: 15px;
+  font-size: 20px;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #707176;
+  transition: all ease-in-out 0.2s;
+  /* border-bottom: 2px solid transparent; */
+  font-weight: 700;
+}
+.active {
+  color: #ffffff;
+  border: 0px;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(
+    90deg,
+    rgba(193, 209, 23, 1) 0%,
+    rgba(0, 166, 90, 1) 50%,
+    rgba(60, 111, 102, 1) 100%
+  );
+  border-image-slice: 1;
+  color: white;
+  margin: auto;
+  text-decoration: none;
+}
+.input-number {
+  max-width: 90px;
+  padding: 12px 10px;
+}
+.gradienttext {
+  background: -webkit-linear-gradient(#c1d117, #00a65a, #3c6f66);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.collapse {
+  max-height: 0px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.open {
+  max-height: 500px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.question-open {
+  background-color: #10241b;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: #b9e7d6;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.question-close {
+  background-color: #10241b;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: #b9e7d6;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.faq-answer {
+  color: #87b79d;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: "center";
+  text-transform: "normal";
+  color: #b9e7d6;
+  display: flex;
+  padding: 0px 20px 40px 40px;
+}
+.faq-q-wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.faq-icons {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+.FAQ-ICON {
+  color: #b5d348;
+  font-size: 20px;
+}
+.check-content {
+  display: flex;
+  align-self: center;
+  padding-left: 120px;
+}
+
+/* Roadmap */
+.roadmap-title {
+  color: #bfd10a;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  display: block;
+}
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+.timeline {
+  border-left: 8px solid #32b16b;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Chivo", sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 0px 0px 0px 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 80%;
+  margin-bottom: 40px;
+}
+
+.timeline .event {
+  border: 2px solid #32b16b;
+  margin-bottom: 20px;
+  position: relative;
+  background: #102c23;
+  padding: 30px 30px;
+  border-radius: 6px;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event::before,
+.timeline .event::after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event::before {
+  left: -267.5px;
+  color: #b9e7d6;
+  content: attr(data-date);
+  text-align: left;
+  font-weight: 700;
+  font-size: 30px;
+  min-width: 120px;
+  font-family: "Saira", sans-serif;
+}
+.phase-content {
+  position: absolute;
+  left: -267px;
+  color: #b9e7d6;
+  font-weight: 700;
+  font-size: 16px;
+}
+.timeline .event:after {
+  background-color: #00a65a;
+  border-radius: 50%;
+  left: -89.85px;
+  background-image: url("../src/static/images/Picto\ RM.svg");
+  height: 67px;
+  width: 67px;
+  content: "";
+  top: -10px;
+}
+.event.last {
+  display: none;
+}
+@media screen and (max-width: 1120px) {
+  .timeline {
+    padding: 0px 0px 0px 50px;
+    max-width: 100%;
+    margin-left: 140px;
+    margin: 50px 0px 50px 150px;
+  }
+  .timeline .event::before {
+    left: -247.5px;
+    font-size: 24px;
+  }
+  .phase-content {
+    left: -247px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .timeline {
+    padding: 0px 0px 0px 50px;
+    max-width: 100%;
+    margin-left: 180px;
+    margin: 50px 0px 50px 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .timeline {
+    padding: 0px 0px 0px 50px;
+    max-width: 100%;
+    margin-left: 180px;
+    margin: 50px 0px 50px 50px;
+  }
+  .timeline .event::before {
+    left: 17.5px;
+    top: -100px;
+    font-size: 32px;
+  }
+  .phase-content {
+    left: 17px;
+    top: -60px;
+    font-size: 20px;
+  }
+  .timeline .event {
+    margin-bottom: 220px;
+    margin-top: 150px;
+  }
+  .check-content {
+    display: flex;
+    align-self: center;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .timeline {
+    margin: 50px 0px 50px 15px;
+    border-left: 4px solid #32b16b;
+    padding: 0px 0px 0px 30px;
+  }
+  .timeline .event:after {
+    left: -55.85px;
+    height: 44px;
+    width: 44px;
+  }
+  .timeline .event::before {
+    left: 17.5px;
+    top: -70px;
+    font-size: 24px;
+  }
+  .phase-content {
+    left: 17px;
+    top: -45px;
+    font-size: 15px;
+  }
+  .timeline .event {
+    margin-bottom: 150px;
+    margin-top: 150px;
+  }
+  .roadmap-title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .timeline .event {
+    padding: 30px 15px;
+  }
+  .check-content {
+  
+    padding-left: 5px;
+  }
+}
